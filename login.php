@@ -1,9 +1,9 @@
 <?php
     session_start();
     $name=$_POST["name"];
-    $dsn="mysql:dbname=tb250668db;host=localhost";
-    $user="tb-250668";
-    $password="4BashzfAUf";
+    $dsn="データベース名";
+    $user="ユーザー名";
+    $password="パスワード";
     $pdo=new PDO($dsn,$user,$password,array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_WARNING));
     $sql="SELECT * FROM users WHERE name=:name";
     $stmt=$pdo->prepare($sql);
