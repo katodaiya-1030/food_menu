@@ -7,9 +7,9 @@
 <body>
     <?php
         // データベース接続
-        $dsn="mysql:dbname=tb250668db;host=localhost";
-        $user="tb-250668";
-        $password="4BashzfAUf";
+        $dsn="データベース名";
+        $user="ユーザー名";
+        $password="パスワード";
         $pdo=new PDO($dsn,$user,$password,array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_WARNING));
         $sql="CREATE TABLE IF NOT EXISTS food_menu"
         ."("
